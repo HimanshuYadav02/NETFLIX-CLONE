@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2family=Martel+Sans:wght@600&family=Poppins:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Poppins',sans-serif ;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+
+.main {
+    background-image: url('./assets/images/bgimage.jpg'); 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 70vh; 
+    width: 100%;
+    position:relative;
+}
+.main .box{
+    height: 70vh;
+    width: 100%;
+    opacity:0.54;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+nav{
+    max-width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    margin:auto ;
+    align-items: center;
+    height: 62px;
+}
+nav img{
+    color: red;
+    width: 114px;
+    position: relative;
+    z-index: 10;
+}
+nav button{
+      position: relative;
+    z-index: 10;
+
+}
+.hero{
+    font-family: 'Martel Sans',sans-serif;
+    height:calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    padding: 0 29px ;
+   
+
+}
+.hero> :nth-child(1){
+    font-family: 'Poppins',sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+    gap: 23px;
+     text-align: center;
+}
+.hero> :nth-child(2){
+font-family: 'poppins'; 
+font-weight: bolder; 
+  font-size:24px ;
+     text-align: center;
+}
+.hero>:nth-child(3){
+    font-weight: 700;
+    font-size:20px ;
+     text-align: center;
+}
+.separation{
+    height:5px ;
+    background-color: rgb(72, 66, 66);
+}
+
+.btn{
+    padding: 3px 8px ;
+font-weight: bold;
+background-color: white;
+
+
+}
+
+.btn-red {
+    background-color: red;
+
+    color: white;
+    background-color: red;
+    padding: 8px 24px;
+    font-size: 20px;
+border-radius: 4px;
+
+}
+.main input{
+     padding: 7px 101px 8px 14px;
+     font-weight: 900;
+    font-size: 12px;
+border-radius: 4px;
+background-color: rgb(10, 10, 10);
+border: 1px solid rgb(217, 214, 214);
+}
+.btn-red-sm{
+      background-color: red;
+      color: white;
+
+}   

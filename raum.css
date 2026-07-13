@@ -1,0 +1,46 @@
+/* Purana .faqbox ka style dhyan me rakhte hue */
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 30px; /* Heading aur boxes ke beech me thoda gap dene ke liye ye line jod sakte hain */
+}
+
+
+
+
+
+
+.faqbox {
+    background-color: #2d2d2d;
+    color: white;
+    max-width: 60vw;
+    margin: 34px auto;
+    padding: 24px;
+    font-size: 24px;
+}
+
+/* Summary ko flex banaya taaki text aur plus icon ek line me rahein */
+.faqbox summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    list-style: none; /* Browser ka default arrow hatane ke liye */
+}
+
+/* Default me answer hide rahega */
+.faqbox .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    color: white;
+    font-size: 18px;
+    transition: max-height 0.25s ease-out;
+}
+
+/* Jaise hi user click karega, details par [open] attribute aa jayega */
+.faqbox[open] .faq-answer {
+    max-height: 600px;
+    padding-top: 15px;
+    border-top: 1px solid #111; /* Jo aapne Image 3 me lagaya tha */
+}
